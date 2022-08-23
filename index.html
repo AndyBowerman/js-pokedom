@@ -15,7 +15,20 @@
     <title>PokéDom</title>
   </head>
   <body>
-    <h1>PokéDom- gotta code 'em all!</h1>
+    <h1 style="padding: 10px;">PokéDom- gotta code 'em all!</h1>
+
+    <section class="search">
+      <label for="pokemon">Search By:</label>
+      <select name="pokemon" class="search__dropdown">
+        <option value="name">By Name</option>
+        <option value="type">By Type</option>
+        <option value="limit">Limit the number of results</option>
+      </select>
+      <input type="text" placeholder="Search Here" class="search__value">
+      <button class="search__button">Reveal</button>
+      <button class="search__reset">Reset</button>
+
+    </section>
 
     <main class="card-container"></main>
 
